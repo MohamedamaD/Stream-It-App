@@ -1,0 +1,27 @@
+.__page-title {
+    background: url('../../assets/page-title.webp');
+    padding: 5em 0;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    z-index: 1111;
+
+    h1 {
+        font-weight: 500;
+        font-size: 3.157em;
+        margin-bottom: 2rem;
+        color: #fff;
+        letter-spacing: 1rem;
+    }
+
+    p {
+        font-weight: bold;
+
+        * {
+            color: var(--primary-color);
+        }
+    }
+}

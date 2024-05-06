@@ -1,0 +1,33 @@
+.search-result {
+    padding: 120px 0;
+
+    .search-container {
+        .bolts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .bolt {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                font-weight: bold;
+                background-color: #5e0409;
+                color: #fff;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: 0.3s linear;
+
+                &.active,
+                &:hover {
+                    background-color: var(--dark-primary-color);
+                }
+            }
+        }
+
+    }
+}

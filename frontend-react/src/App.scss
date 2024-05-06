@@ -1,0 +1,16 @@
+// global layout
+
+.__bg-image {
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: url('./assets/headingsvg.jpg');
+}
+
+.__star-icon {
+    font-size: 1.5rem;
+    fill: rgb(255, 212, 42);
+
+    &._empty {
+        fill: gray !important;
+    }
+}

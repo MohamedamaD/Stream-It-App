@@ -1,0 +1,150 @@
+.__about-page {
+    .__about-container {
+        .__teamwork {
+            padding: 6rem 0;
+
+            p.__title {
+                text-align: center;
+
+                span {}
+            }
+
+            .__team {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                margin: 3rem 0;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                .__teammate {
+                    .box {
+                        overflow: hidden;
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            max-width: 300px;
+                            transition: 0.3s linear;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                        }
+
+                        span {
+                            margin: 0.75rem 0;
+                            display: block;
+                            color: #FFFFFF;
+                            font-style: italic;
+                            padding: 0.5em 0;
+                            padding-left: 0.25em;
+                            background: transparent -webkit-gradient(linear, right top, left top, from(rgba(11, 1, 2, 0)), to(rgba(255, 55, 65, .3)));
+                            border-left: .25em solid var(--primary-color);
+                        }
+
+                        h4 {
+                            color: #FFFFFF;
+                            font-size: 1.777em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .__clients {
+            padding: 3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .img-box {
+                width: 50%;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .text-box {
+                width: 50%;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                h3 {
+                    text-align: start;
+                }
+
+                p {
+                    line-height: 2;
+
+                    span {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+
+        .__collaborations h3,
+        .__clients h3,
+        .__teamwork h3 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 2rem !important;
+            }
+        }
+
+        .__collaborations {
+            padding: 6rem 0;
+
+            h3 {
+                margin-bottom: 80px;
+            }
+
+            .__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem 1rem;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+
+
+                .__collaborator {
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

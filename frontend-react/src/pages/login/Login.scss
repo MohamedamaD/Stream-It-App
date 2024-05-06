@@ -1,0 +1,173 @@
+$primaryColor: var(--primary-color);
+$textColor: var(--text-color);
+
+.__login {
+    background: url('../../assets/login_background.jpg') center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+
+    .__login__container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .error-popup {
+        position: fixed !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #00000054;
+        backdrop-filter: blur(4px);
+        z-index: 1111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        gap: 1rem;
+        span {
+            font-weight: bold;
+            font-size: x-large;
+            color: var(--white-color);
+        }
+    }
+
+    .__container__wrapper {
+        background-color: rgba(0, 0, 0, .6);
+        backdrop-filter: blur(5px);
+        padding: 2rem 4rem;
+        width: 500px;
+
+        @media screen and (max-width: 991px) {
+            width: 700px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .__links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                border-radius: 100%;
+                width: 50px;
+                height: 50px;
+                transition: 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .__forget-password {
+            text-align: right;
+
+            a {
+                font-weight: bold;
+                font-style: italic;
+                color: $primaryColor;
+            }
+        }
+
+        .__submit-btn {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .__br-wrapper {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+
+            span.__line {
+                display: block;
+                width: 100%;
+                height: 1.5px;
+                background-color: #262525;
+            }
+
+            span.__br {
+                padding: 0 1rem;
+                color: $textColor;
+                text-transform: uppercase;
+            }
+        }
+
+        .__register-wrapper {
+            color: $textColor;
+            text-align: center;
+
+            a {
+                font-weight: bold;
+                color: $primaryColor;
+                margin-left: 0.25rem;
+            }
+        }
+
+        .input-fields {
+            margin: 1.5rem 0;
+
+            &.__checkbox-wrapper {
+                display: flex;
+                align-items: center;
+                position: relative;
+                gap: 1rem;
+
+                label {
+                    margin-bottom: 1.25rem;
+                }
+
+                .__custom-checkbox {
+                    input {
+                        display: inline-block !important;
+                        background-color: transparent !important;
+                        width: 20px;
+                        opacity: 0;
+                        z-index: 1;
+
+                        &:checked~span svg {
+                            opacity: 1 !important;
+                        }
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #fff;
+                        border-radius: var(--radius);
+
+                        svg {
+                            transition: 0.3s linear;
+                            opacity: 0;
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

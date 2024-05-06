@@ -1,0 +1,9 @@
+.__header {
+    position: relative;
+    z-index: 111111111;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--primary-color) !important;
+}

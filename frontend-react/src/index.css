@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  border: none;
+  color: var(--text-color);
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --primary-color: #e50914;
+  --dark-primary-color: #bf000a;
+  --white-color: #ffffff;
+  --text-color: #d1d0cf;
+  --body-background-color: #141414;
+  --light-black-background-color: #191919;
+  --black-color: #111111;
+
+  --blur: 2px;
+  --radius: 0.25rem;
+
+  font-family: 'Roboto',
+    sans-serif;
+  position: relative;
+  background-color: #000;
+  /* height: 5000px; */
+}
+
+body.dark {
+  --primary-color: #00f;
+}
+
+::selection {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  /*set background here*/
+}
+
+::-webkit-scrollbar-thumb {
+  /*set background here*/
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /*change background here*/
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+    max-width: 2180px;
+  }
+}
+
+
+.__google {
+  background-color: #db4437 !important;
+}
+
+.__amazon {
+  background-color: #ff9900 !important;
+}
+
+.__linkedin {
+  background-color: #007bb6 !important;
+}

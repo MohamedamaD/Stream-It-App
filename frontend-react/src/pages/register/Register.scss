@@ -1,0 +1,82 @@
+.__register {
+    width: 100%;
+    background: url('../../assets/login_background.jpg') center center ;
+    background-size: cover;
+    position: relative;
+
+    .__register__container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form#__register__form {
+        background-color: rgba(0, 0, 0, .6);
+        backdrop-filter: blur(5px);
+        padding: 60px 40px;
+        border-radius: 5px;
+        width: 80%;
+
+        @media screen and (max-width: 480px) {}
+
+        h1 {
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 11px;
+            input {
+                margin-right: 5px;
+            }
+            span {
+                color: crimson;
+            }
+        }
+
+        .__flat-button {
+            width: 100%;
+            margin: 2rem 0;
+        }
+    }
+
+    .input-part {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 776px) {
+            flex-direction: column;
+        }
+    }
+
+    #__terms~label,
+    p.down-form {
+        color: var(--white-color);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin-bottom: 0.25rem;
+        font-size: 14px;
+    }
+
+    .__errors {
+        font-size: large !important;
+        color: var(--primary-color) !important;
+        margin: 1rem 0 !important;
+    }
+
+    .down-form {
+        text-align: center;
+        font-size: large !important;
+
+        a {
+            color: crimson;
+            text-decoration: none;
+        }
+    }
+}

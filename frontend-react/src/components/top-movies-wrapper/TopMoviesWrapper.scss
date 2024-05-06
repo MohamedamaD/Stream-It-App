@@ -1,0 +1,68 @@
+.__top-movies {
+    padding: 60px 0;
+    position: relative;
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-wrapper {
+        align-items: baseline;
+
+        .swiper-slide {
+            border-radius: 3px;
+            overflow: hidden;
+        }
+    }
+
+    h3 {
+        color: #fff;
+        font-size: x-large;
+        margin-bottom: 2rem;
+    }
+
+    .__card-wrapper {
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(to top, #0000006a 20%, transparent);
+            z-index: 0;
+        }
+
+        &:hover {
+            .__counter {
+                bottom: 40px;
+            }
+        }
+
+        .__img-box {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .__counter {
+            position: absolute;
+            transition: 0.2s linear;
+
+            bottom: 0px;
+            right: 20px;
+            font-weight: bold;
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: url('../../assets/headingsvg.jpg');
+        }
+    }
+}

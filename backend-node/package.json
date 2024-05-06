@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "run dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2",
+    "dotenv": "^16.3.1",
+    "node": "^21.2.0",
+    "nodemon": "^3.0.2"
+  },
+  "name": "backend-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

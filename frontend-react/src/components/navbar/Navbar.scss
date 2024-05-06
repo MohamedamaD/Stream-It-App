@@ -1,0 +1,128 @@
+$whiteColor: var(--white-color);
+$blackColor: var(--black-color);
+$primaryColor: var(--primary-color);
+$textColor: var(--text-color);
+
+.__navbar-wrapper {
+    background-color: var(--light-black-background-color);
+
+    .__navbar__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+
+        .brand {
+            img {
+                @media screen and (max-width: 500px) {
+                    width: 100px;
+                }
+
+                width: 150px;
+            }
+        }
+
+        box-icon {
+            fill: $whiteColor;
+            cursor: pointer;
+        }
+
+        .__links {
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+
+            a {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0 1rem;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+
+        .__icons-wrapper {
+            display: flex;
+            gap: 1rem;
+
+            .__item {
+                position: relative;
+
+                &.__search-item {
+                    display: flex;
+                }
+
+                .__icon.__rounded {
+                    box-icon {
+                        background-color: $blackColor;
+                        border-radius: 50%;
+                        padding: 0.4rem;
+                    }
+                }
+
+                box-icon#__menu-icon {
+                    display: none;
+
+                    @media screen and (max-width: 991px) {
+                        display: block;
+                    }
+                }
+            }
+
+            .__nav-search {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                box-icon {
+                    padding: 0.25rem;
+                }
+
+                input {
+                    background-color: transparent;
+                    color: $textColor;
+                    max-width: 200px;
+                    width: 100%;
+
+                    &::placeholder {
+                        color: $textColor;
+                    }
+                }
+            }
+
+            ul#__pages-nav__ul {
+                background-color: $blackColor;
+                width: fit-content;
+                position: absolute;
+                right: 0;
+                top: 102%;
+
+
+                a {
+                    min-width: 250px;
+                    padding: 1rem;
+                    color: $whiteColor;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.5rem;
+
+                    span {
+                        transition: 0.3s ease-in;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

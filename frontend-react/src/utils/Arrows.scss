@@ -1,0 +1,32 @@
+.__utils-icon {
+    .__icon {
+        font-size: 50px;
+        fill: #fff;
+        cursor: pointer;
+        transition: 0.2s linear;
+
+        &:hover {
+            fill: var(--primary-color) !important;
+        }
+    }
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+
+    &.__prev {
+        left: 10px;
+    }
+
+    &.__next {
+        right: 10px;
+    }
+
+    transition: 0.2s linear;
+
+    &.swiper-button-disabled {
+        // display: none;
+        opacity: 0;
+    }
+}

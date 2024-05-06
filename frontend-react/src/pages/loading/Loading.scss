@@ -1,0 +1,16 @@
+.__loading-page {
+    background-color: var(--body-background-color);
+
+    .__loading__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 100vh;
+
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+}

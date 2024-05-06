@@ -1,0 +1,176 @@
+.__movie {
+    main {
+        .__poster {
+            margin-bottom: 2rem;
+
+            img {
+                display: block;
+                width: 100%;
+                max-height: 600px;
+                object-fit: cover;
+            }
+
+        }
+
+
+
+        .__metadata {
+            .__meta {
+                background: linear-gradient(90.06deg, rgba(20, 20, 20, 0) 1.66%, #141314 43.64%, rgba(20, 20, 20, 0) 89.28%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .__data {
+                margin-bottom: 1rem;
+
+                .__review-data {
+                    >p {
+                        margin-bottom: 1rem;
+                    }
+
+                    >h1 {
+                        color: #fff;
+                        margin-bottom: 1rem;
+
+                        @media screen and (max-width: 767px) {
+                            font-size: larger;
+                        }
+                    }
+
+                    .__user-rating {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            margin-right: 1rem;
+                        }
+
+                        .__star-icon._red {
+                            fill: var(--primary-color);
+                            cursor: pointer;
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        margin: 2rem 0;
+
+                        .wrap {
+                            display: flex;
+                            gap: 1rem;
+
+                            @media screen and (max-width: 767px) {
+                                flex-direction: column;
+
+                            }
+                        }
+                    }
+                }
+
+                .__description-data {
+                    p {
+                        line-height: 1.8;
+                        margin-bottom: 1rem;
+                    }
+
+                    span {
+                        font-size: larger;
+                        color: #fff;
+                        font-weight: bold;
+
+                        a {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        .__details {
+            margin-bottom: 4rem;
+
+            div.__wrapper {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                @media screen and (max-width: 767px) {
+                    flex-wrap: wrap;
+                }
+
+
+                &._last {
+                    font-weight: bold;
+                    font-size: larger;
+
+                    >* {
+                        color: #fff !important;
+
+                    }
+                }
+
+                .__status {
+                    background: #7f9bae;
+                    padding: 0.4rem;
+                }
+
+                .__rate {
+                    font-size: larger;
+                }
+
+                ._wr {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                h1 {
+                    font-size: 2.3rem;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 2rem;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+
+                .__genres {
+                    font-weight: bold;
+                    font-size: larger;
+                    color: var(--primary-color);
+                    position: relative;
+
+                    &:first-of-type {
+                        margin-right: 0.5rem;
+                    }
+
+                    &:not(&:first-of-type) {
+                        margin: 0 0.5rem;
+                    }
+
+                    &:not(&:first-of-type)::after {
+                        content: '';
+                        position: absolute;
+                        left: -1rem;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 5px;
+                        height: 5px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
